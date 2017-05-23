@@ -1,0 +1,25 @@
+digraph Router {
+    phone0 [shape=record,label="Phone #0"];
+    
+    phone1 [shape=record,label="Phone #1"];
+    
+    broker [shape=record,label="MQTT Broker"];
+
+    router [shape=record,label="ACOM-XP Router"];
+
+    frt_irc [shape=record,label="Frontend: IRC"];
+    frt_xmpp [shape=record,label="Frontend: XMPP"];
+
+    phone0 -> broker [dir="both"];
+    phone1 -> broker [dir="both"];
+    broker -> router [dir="both"];
+
+    router -> frt_irc [dir="both"];
+    router -> frt_xmpp [dir="both"];
+
+    client0 [shape=record,label="Client #0"];
+    client1 [shape=record,label="Client #1"];
+
+    frt_irc -> client0 [dir="both"];
+    frt_xmpp -> client1 [dir="both"];
+}
