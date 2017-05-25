@@ -19,5 +19,5 @@ digraph Router {
     frt_xmpp -> client0 [dir="both"];
     frt_rest -> client0 [dir="both"]
 
-    label = "\nACOM-XP topology.\nCreated by Dom Rodrigue\nRev: 0.1.0"
+    label = "\nACOM-XP topology.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.0"
 }

@@ -10,7 +10,7 @@
 <title>Router</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-402 427.5,-402 427.5,4 -4,4"/>
 <text text-anchor="middle" x="211.75" y="-37.8" font-family="Times,serif" font-size="14.00" fill="#000000">ACOM&#45;XP topology.</text>
-<text text-anchor="middle" x="211.75" y="-22.8" font-family="Times,serif" font-size="14.00" fill="#000000">Created by Dom Rodrigue</text>
+<text text-anchor="middle" x="211.75" y="-22.8" font-family="Times,serif" font-size="14.00" fill="#000000">Created by Dom Rodriguez (shymega)</text>
 <text text-anchor="middle" x="211.75" y="-7.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rev: 0.1.0</text>
 <!-- phone0 -->
 <g id="node1" class="node">
