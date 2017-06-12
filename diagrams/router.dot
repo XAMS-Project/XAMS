@@ -1,24 +1,23 @@
 digraph Router {
-    phone0 [shape=record,label="Phone #0"];
+    node [shape=record];
+    
+    phone0 [label="Phone: 1ca0fb3f-5fb0-49fe-8d82-8d686be2fb15"];
 
-    broker [shape=record,label="MQTT Broker"];
-    router [shape=record,label="ACOM-XP Router"];
+    broker [label="MQTT Broker"];
+    router [label="ACOM-XP Router"];
 
-    frt_irc [shape=record,label="Frontend: IRC"];
-    frt_xmpp [shape=record,label="Frontend: XMPP"];
-    frt_rest [shape=record,label="Frontend: RESTful API"];
+    frt_irc [label="Frontend: IRC"];
+    frt_xmpp [label="Frontend: XMPP"];
+    frt_rest [label="Frontend: RESTful API"];
+    frt_matrix [label="Frontend: Matrix.org"];
 
     phone0 -> broker -> router [dir="both"];
 
-    router -> frt_irc [dir="both"];
-    router -> frt_xmpp [dir="both"];
-    router -> frt_rest [dir="both"];
+    router -> {frt_irc,frt_xmpp,frt_rest,frt_matrix} [dir="both"];
 
-    client0 [shape=record,label="Client #0"];
+    client0 [label="Client: 04470964-6982-4b32-bfb9-38a529a4384f"];
 
-    frt_irc -> client0 [dir="both"];
-    frt_xmpp -> client0 [dir="both"];
-    frt_rest -> client0 [dir="both"]
+    {frt_irc,frt_xmpp,frt_rest,frt_matrix} -> client0 [dir="both"];
 
-    label = "\nACOM-XP topology.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.2"
+    label = "\nACOM-XP topology.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.4"
 }
