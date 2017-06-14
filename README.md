@@ -1,3 +1,2 @@
-# Android Collection (of) Modular eXtendable Programs
+# eXtendable Modular Android Suite
 
-> (ACOM-XP)

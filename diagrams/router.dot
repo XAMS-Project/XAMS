@@ -19,5 +19,5 @@ digraph Router {
 
     {frt_irc,frt_xmpp,frt_rest,frt_matrix} -> client0 [dir="both"];
 
-    label = "\nACOM-XP topology.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.4"
+    label = "\nXAMS design.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.4"
 }
