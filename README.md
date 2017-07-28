@@ -12,5 +12,12 @@ development/debugging. Instead, in stark contrast to Project MAXS, the
 router acts as the intermediary between the user and their Android
 device.
 
+## Status
+
+I'm still working on the router, which is the *most* critical part of
+the XAMS architecture.
+
+Android app development to be commenced soon.
+
 [maxs]: http://projectmaxs.org/homepage/
 [router]: https://github.com/xams-project/router
