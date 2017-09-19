@@ -1,0 +1,16 @@
+{
+    "_self": {
+        "device": {
+            "uuid": "9dec27a8-e237-4de7-b73d-fb27c2a430c7",
+            "type": "phone"
+        }
+    },
+    "payload": {
+        "sms_thread": {
+          "_self": {
+            "_from": "+44 00000 00000",
+            "_to": null
+          }
+        }
+    }
+}
