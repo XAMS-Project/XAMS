@@ -6,11 +6,21 @@
         }
     },
     "payload": {
-        "sms_thread": {
-          "_self": {
-            "_from": "+44 00000 00000",
-            "_to": null
-          }
-        }
+        "sms_thread": [
+            {
+                "_self": {
+                    "_from": "+44 00000 00000",
+                    "_to": "+44 11111 11111"
+                },
+                "message": "Hey there!"
+            },
+            {
+                "_self": {
+                    "_from": "+44 11111 11111",
+                    "_to": "+44 00000 00000"
+                },
+                "message": "Hi, how're you doin'?"
+            }
+        ]
     }
 }
