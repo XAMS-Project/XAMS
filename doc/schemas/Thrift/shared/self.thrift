@@ -5,5 +5,5 @@ struct Device {
 
 struct _Self {
   1: required Device device;
-  2: optional byte direction;
+  2: optional i8 direction;
 }
