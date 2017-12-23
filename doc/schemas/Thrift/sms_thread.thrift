@@ -1,6 +1,8 @@
 include "shared/self.thrift"
 include "sms/sms_thread/sms_thread_payload.thrift"
 
+typedef list<sms_thread_payload.SMSThread> sms_threads
+
 struct Payload {
   1: required list<sms_thread_payload.SMSThread> sms_threads;
 }
