@@ -1,7 +1,7 @@
 digraph Router {
     node [shape=record];
     
-    phone0 [label="Phone: 1ca0fb3f-5fb0-49fe-8d82-8d686be2fb15"];
+    phone0 [label="Phone"];
 
     broker [label="MQTT Broker"];
     router [label="XAMS Router"];
@@ -15,7 +15,7 @@ digraph Router {
 
     router -> {frt_irc,frt_xmpp,frt_rest,frt_matrix} [dir="both"];
 
-    client0 [label="Client: 04470964-6982-4b32-bfb9-38a529a4384f"];
+    client0 [label="Client"];
 
     {frt_irc,frt_xmpp,frt_rest,frt_matrix} -> client0 [dir="both"];
 
