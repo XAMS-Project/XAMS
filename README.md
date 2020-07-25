@@ -1,15 +1,15 @@
-# eXtendable Modular Android Suite
+# eXtendable Mobile Control Suite
 
-## What is XAMS?
+## What is XMCS?
 
-XAMS is a suite of Android programs that allow for *direct* remote
+XMCS is a suite of Android programs that allow for *direct* remote
 control of your Android device.
 
-XAMS is inspired by [Project MAXS][maxs], but is designed around an
-"device abstraction layer" (or `DAL`) in the form of the [XAMS
+XMCS is inspired by [Project MAXS][maxs], but is designed around an
+"device abstraction layer" (or `DAL`) in the form of the [XMCS
 router][router].
 
-## The XAMS router.
+## The XMCS router.
 
 The router talks to the Android device remotely using a specialized
 protocol over the MQTT broker. No user talks to the Android device
@@ -20,10 +20,10 @@ intermediary between the user and their Android device.
 
 ## Differences to Project MAXS
 
-In line with my views on standardisation and openness, the XAMS project
+In line with my views on standardisation and openness, the XMCS project
 will have open specifications for each module, so that anyone with the
-skills for working with XAMS can make their _own_ version of XAMS,
-without having to reverse-engineer or reimplement the code in XAMS's
+skills for working with XMCS can make their _own_ version of XMCS,
+without having to reverse-engineer or reimplement the code in XMCS's
 associated repositories.
 
 Some people have asked me why I couldn't just add a new `Transport` to
@@ -33,27 +33,27 @@ the MAXS project. I will list these reasons below:
   GTalkSMS is necessary. There is nothing wrong with a reimplementation,
   especially when it is being done on one's own time, and brainpower.
 
-  XAMS is merely an experiment. It might work better than MAXS, it may
-  not. I believe that XAMS's approach to remote control of an Android
+  XMCS is merely an experiment. It might work better than MAXS, it may
+  not. I believe that XMCS's approach to remote control of an Android
   device is better than MAXS, as the processing is done on a separate
   machine, and by using a protocol *designed* for low power usage, and
   low bandwidth, this will achieve great savings in both power usage,
   and data.
 
 I will be making more illustrations to present the differences between
-XAMS and MAXS at a later date.
+XMCS and MAXS at a later date.
 
 ## Status
 
-Currently, the core component of the XAMS project, the router, is
+Currently, the core component of the XMCS project, the router, is
 still in development. I am currently trying to resolve an
 [issue][emqttc_issue] with the [Erlang MQTT client library][emqttc],
 which affects the library's interaction with the Mosquitto
 broker. This should be resolved soon, and I hope that development can
-resume on the XAMS router as soon as possible.
+resume on the XMCS router as soon as possible.
 
 Regarding the Android app development, this will commence once the
-Thrift schemas have been developed to a suitable state, and the XAMS
+Thrift schemas have been developed to a suitable state, and the XMCS
 router works with the aforementioned schemas.
 
 [maxs]: http://projectmaxs.org/homepage/

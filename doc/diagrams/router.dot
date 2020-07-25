@@ -4,7 +4,7 @@ digraph Router {
     phone0 [label="Phone"];
 
     broker [label="MQTT Broker"];
-    router [label="XAMS Router"];
+    router [label="XMCS Router"];
 
     frt_irc [label="Frontend: IRC"];
     frt_xmpp [label="Frontend: XMPP"];
@@ -19,5 +19,5 @@ digraph Router {
 
     {frt_irc,frt_xmpp,frt_rest,frt_matrix} -> client0 [dir="both"];
 
-    label = "\nXAMS design.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.6"
+    label = "\nXMCS design.\nCreated by Dom Rodriguez (shymega)\nRev: 0.1.6"
 }
