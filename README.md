@@ -2,12 +2,10 @@
 
 ## What is XMCS?
 
-XMCS is a suite of Android programs that allow for *direct* remote
+XMCS is a suite of Android (and maybe iOS) programs that allow for *direct* remote
 control of your Android device.
 
-XMCS is inspired by [Project MAXS][maxs], but is designed around an
-"device abstraction layer" (or `DAL`) in the form of the [XMCS
-router][router].
+XMCS is inspired by [Project MAXS][maxs], but goes through the XMCS router, and the XMCS app is one single application, to make it more user frindly.
 
 ## The XMCS router.
 
