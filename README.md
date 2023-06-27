@@ -2,19 +2,21 @@
 
 ## What is XMCS?
 
-XMCS is a suite of Android (and maybe iOS) programs that allow for *direct* remote
-control of your Android device.
+XMCS is a set of protocols for Android, iOS, Sailfish, postmarketOS, and
+UBPorts, that allow for implementation of an application suite for remote
+control of your mobile device.
 
-XMCS is inspired by [Project MAXS][maxs], but goes through the XMCS router, and the XMCS app is one single application, to make it more user frindly.
+XMCS is inspired by [Project MAXS][maxs], but goes through the XMCS router, and
+the XMCS app is one single application, to make it more user friendly.
 
 ## The XMCS router.
 
-The router talks to the Android device remotely using a specialized
-protocol over the MQTT broker. No user talks to the Android device
+The router talks to the mobile device remotely using a specialized
+protocol over the MQTT broker. No user talks to the mobile device
 directly - unless its for development/debugging.
 
 Instead, in stark contrast to Project MAXS, the router acts as the
-intermediary between the user and their Android device.
+intermediary between the user and their mobile device.
 
 ## Differences to Project MAXS
 
@@ -32,7 +34,7 @@ the MAXS project. I will list these reasons below:
   especially when it is being done on one's own time, and brainpower.
 
   XMCS is merely an experiment. It might work better than MAXS, it may
-  not. I believe that XMCS's approach to remote control of an Android
+  not. I believe that XMCS's approach to remote control of an mobile
   device is better than MAXS, as the processing is done on a separate
   machine, and by using a protocol *designed* for low power usage, and
   low bandwidth, this will achieve great savings in both power usage,
@@ -50,7 +52,7 @@ which affects the library's interaction with the Mosquitto
 broker. This should be resolved soon, and I hope that development can
 resume on the XMCS router as soon as possible.
 
-Regarding the Android app development, this will commence once the
+Regarding the mobile app development, this will commence once the
 Thrift schemas have been developed to a suitable state, and the XMCS
 router works with the aforementioned schemas.
 
